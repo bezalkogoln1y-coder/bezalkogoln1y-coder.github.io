@@ -18,6 +18,7 @@ time, mark, audio, video {
 	font-family: 'Noto Sans', sans-serif;
     font-size: 14px;
 	vertical-align: baseline;
+    outline: none;
 }
 
 /* make sure to set some focus styles for accessibility */

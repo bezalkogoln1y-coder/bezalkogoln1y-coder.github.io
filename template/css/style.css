@@ -36,20 +36,20 @@
 }
 
 #head .phones p {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 #head .phones p a {
     color: #0093ff;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 700;
 }
 
 .cart {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -84,8 +84,7 @@
     text-transform: uppercase;
     color: #0093ff;
     margin-bottom: 20px;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 18px;
 }
 
 .left-menu .wrapper .item {
@@ -122,12 +121,24 @@
     max-width: 73.666667%;
 }
 
+.items.cat {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
 .items h1 {
     font-size: 26px;
-    font-weight: bold;
     margin-top: 15px;
     text-transform: uppercase;
     color: red;
+}
+
+.items.cat h1 {
+    color: black;
+}
+
+.items.catalog h1 {
+    color: black;
 }
 
 .items .see-all span {
@@ -152,6 +163,11 @@
     -moz-transform: translateX(20px);
     -webkit-transform: translateX(20px);
     transform: translateX(20px);
+}
+
+.items.cat .product:hover .wrapper {
+    cursor: pointer;
+    border: 1px solid black;
 }
 
 .items .product .wrapper {
@@ -250,20 +266,12 @@
 .items_form .sent .form-heading {
     margin-bottom: 15px;
     font-size: 24px;
-    font-weight: bold;
     text-transform: uppercase;
     color: #0093ff;
 }
 
 .items_form .sent p {
     margin-bottom: 10px;
-}
-
-.items_form .sent p input {
-    width: 100%;
-    font-size: 16px;
-    border-radius: 5px;
-    padding: 10px 15px;
 }
 
 .items_form .sent p a {
@@ -284,11 +292,243 @@ footer .wrapper .icon {
     color: #0093ff;
 }
 
-footer .wrapper p {
-    margin-bottom: 10px;
+footer .wrapper .text {
+    line-height: 18px;
 }
 
 footer .phones .wrapper p a {
     color: black;
     text-decoration: none;
+}
+
+.modal-body h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.modal-body p.subtitle {
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.modal-body form p {
+    margin-bottom: 10px;
+}
+
+.sent p input, .sent p textarea {
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #80808045;
+    padding: 10px 0 10px 15px;
+    font-family: 'Noto Sans', sans-serif;
+    resize: none;
+}
+
+.sent p textarea {
+    height: 100px;
+}
+
+#breadcrumb .wrapper {
+    background-color: #d3d3d33b;
+    padding: 15px 0 15px 15px;
+}
+
+#breadcrumb .wrapper li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+#breadcrumb .wrapper li.active {
+    color: #A0A9AF;
+}
+
+#breadcrumb .wrapper li:after {
+    content: '|';
+    padding: 0 10px;
+    color: #A0A9AF;
+}
+
+#breadcrumb .wrapper li.active:after {
+    content: '';
+}
+
+.form-left {
+    background: #0093ff;
+    padding: 15px;
+}
+
+.form-left .sent .form-heading {
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.form-left .sent p {
+    margin-bottom: 10px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+
+.form-left .sent p a {
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.form-left .sent p textarea {
+    height: 70px;
+}
+
+.form-left .sent .btn {
+    background: black;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+a.fancybox:hover {
+    opacity: 1;
+}
+
+.slick-product .product .wrapper {
+    padding: 15px;
+    border: 1px solid lightgray;
+}
+
+.slick-product .product .wrapper > div {
+    margin-bottom: 10px;
+}
+
+.slick-product .product .wrapper .title-block p a {
+    color: black;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.slick-product .product .wrapper .title-block p a:hover {
+    text-decoration: underline;
+}
+
+.slick-product .product .wrapper .bool-block p i {
+    margin-left: 5px;
+}
+
+.slick-product .product .wrapper .bool-block .true {
+    color: green;
+}
+
+.slick-product .product .wrapper .bool-block .false {
+    color: red;
+}
+
+.slick-product .product .wrapper .price-block .price {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.slick-product .product .wrapper .price-block .btn {
+    color: white;
+    text-transform: lowercase;
+    background: #0093ff;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.product-cart .product-cart_top h1 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    line-height: 25px;
+}
+
+.product-cart .product-cart_top p.article {
+    color: #a0a0a0;
+}
+
+.product-cart .product-cart_top .img {
+    margin-top: 20px;
+}
+
+.product-cart .product-cart_top .price {
+    font-size: 18px;
+}
+
+.product-cart .product-cart_top .btn {
+    padding: 15px 0;
+}
+
+.product-cart .product-cart_top .btn-blue {
+    background: #0093ff;
+    color: white;
+    text-transform: uppercase;
+    border: 2px solid #0093ff;
+}
+
+.product-cart .product-cart_top .btn-blue:hover {
+    opacity: .8;
+}
+
+.product-cart .product-cart_top .btn-white {
+    border: 2px solid #0093ff;
+    text-transform: uppercase;
+}
+
+.product-cart .product-cart_top .btn-white:hover {
+    opacity: .8;
+}
+
+.product-cart .product-cart_top .info td {
+    font-size: 12px;
+}
+
+.product-cart .product-cart_top .question {
+    background-image: url(/assets/images/help.png);
+    background-position: 55px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+
+.product-cart .product-cart_top .question a {
+    color: #0093ff;
+    text-decoration: none;
+}
+
+.product-cart .product-cart_bottom .tab-panel {
+    border-bottom: 3px solid #0093ff;
+}
+
+.product-cart .product-cart_bottom .tab-panel_item {
+    padding: 20px 30px;
+    border: 1px solid #e3dfdf;
+    transition: .6s;
+}
+
+.product-cart .product-cart_bottom .tab-panel_item.active {
+    color: white;
+    background: #0093ff;
+    border: 1px solid #0093ff;
+}
+
+.product-cart .product-cart_bottom .tab-content {
+    border: 1px solid #e3dfdf;
+    padding: 25px;
+}
+
+.analogs .items_about .slick-product .slick-arrow {
+    top: 0;
+    bottom: inherit;
+}
+
+.analogs h3 {
+    color: #0093ff;
+    margin-bottom: 30px;
+    font-size: 24px;
 }
